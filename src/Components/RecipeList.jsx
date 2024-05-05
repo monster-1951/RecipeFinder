@@ -50,8 +50,9 @@ const RecipeList = ({ data }) => {
                   );
                 })}
               </ul>
-              <br />
-              <button href={item.recipe.url} className="btn btn-primary">Know The Full Recipe</button>
+              <br /><form action={item.recipe.url} target="_blank">
+              <button type="submit" className="btn btn-primary">Know The Full Recipe</button>
+              </form>
             </div>
           </div>
         );
